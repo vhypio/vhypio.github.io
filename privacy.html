@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy · Pepper V21 Drive Backup</title>
+  <meta name="description" content="Privacy policy for personal Pepper V21 Google Drive backup utility.">
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, sans-serif; }
+    body { margin: 0; background: #101820; color: #eef4f7; }
+    main { max-width: 730px; padding: 56px 24px; margin: auto; line-height: 1.65; }
+    h1 { font-size: 2.1rem; letter-spacing: -0.03em; }
+    h2 { margin-top: 2.1rem; }
+    a { color: #90d8ff; }
+    footer { margin-top: 54px; color: #b2c4cd; font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="/">← Pepper V21 Drive Backup</a></p>
+  <h1>Privacy policy</h1>
+  <p>Effective November 7, 2026. This policy applies only to the personal Pepper V21 Drive Backup integration, not to other Pepper services or applications.</p>
+  <h2>Who uses this integration?</h2>
+  <p>This is a single-owner software-development and backup utility. It has no public user registration and is not intended to collect information from other users.</p>
+  <h2>What Google data is accessed?</h2>
+  <p>The owner grants OAuth permission to access Google Drive. Depending on the scope shown during authorization, this permission may technically allow access to Drive files outside the backup folder. The backup workflow is configured to transfer, list, and verify files only within the owner's designated Pepper master backup folder.</p>
+  <h2>How is data used?</h2>
+  <p>Verified Pepper source ZIPs, checksums, manifests, and native XCTest logs are uploaded from private GitHub Actions runs to the owner's Google Drive. Files may be downloaded temporarily by the workflow for integrity checks. This is strictly for owner-controlled backup and software development.</p>
+  <h2>Where are credentials stored?</h2>
+  <p>Google OAuth tokens and client credentials are placed in the owner's private GitHub Actions Secrets and in the owner's local rclone configuration. They are not embedded in this public website or committed to the GitHub source repository. GitHub and Google process data as infrastructure providers for the backup operation.</p>
+  <h2>Sharing, advertising, and sales</h2>
+  <p>The backup utility does not sell Google user data, use it for advertising, or share it with independent data brokers. Google Drive files remain under the owner's Google account. The private GitHub Actions workflow and Google Drive services process only the files needed for backup.</p>
+  <h2>Retention and deletion</h2>
+  <p>Source archives are stored in private, owner-controlled Google Drive folders. Automated CI-generated snapshots are kept separately from protected accepted builds. A read-only retention audit identifies the latest verified review candidate and two predecessors and marks older CI snapshots for future review after at least 48 hours. The audit does not delete anything. Protected historical baselines are never targeted by this retention audit. The owner can manually remove Drive backups, revoke OAuth access, or change GitHub secrets.</p>
+  <h2>Security</h2>
+  <p>Transfers use authenticated HTTPS connections and archives are checked against hashes and source manifests. No online system can guarantee absolute security. Access to the private GitHub repository, Google account, and OAuth credentials must remain restricted to the owner.</p>
+  <h2>Control and questions</h2>
+  <p>The owner can revoke access at <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>. Questions about the OAuth application can be sent to the contact address provided on its Google OAuth consent screen.</p>
+  <footer><a href="/">Home</a> · Pepper V21 Drive Backup</footer>
+</main>
+</body>
+</html>
